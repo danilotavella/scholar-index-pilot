@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FT01-A Pipeline Reproducibility Audit: Same-Batch vs Later-Batch NMAE/MAE/RMSE on UCI Gas Sensor Array Drift Dataset — Danilo Tavella</title>
+<meta name="description" content="Author abstract, corrected version v1.1, DOI and source PDF for FT01-A technical note.">
+<meta name="citation_title" content="FT01-A Pipeline Reproducibility Audit: Same-Batch vs Later-Batch NMAE/MAE/RMSE on UCI Gas Sensor Array Drift Dataset">
+<meta name="citation_author" content="Danilo Tavella">
+<meta name="citation_publication_date" content="2026/09/26">
+<meta name="citation_doi" content="10.5281/zenodo.22976177">
+<meta name="citation_pdf_url" content="https://danilotavella.github.io/scholar-index-pilot/FT01A_Pipeline_Reproducibility_Audit_v1_1_CORRECTED.pdf">
+<link rel="canonical" href="https://danilotavella.github.io/scholar-index-pilot/">
+<style>
+body {font:17px/1.65 system-ui, -apple-system, Segoe UI, Arial, sans-serif; background:#fff; color:#192535; margin:0;}
+main {max-width:900px; padding:32px 24px 70px; margin:auto;}
+h1 {font-size:clamp(28px,4.4vw,42px); line-height:1.2; letter-spacing:-.02em; margin:.2em 0 .55em;}
+h2 {font-size:22px; margin:28px 0 10px;}
+a {color:#18559b; text-underline-offset:3px;}
+small,.muted {color:#526071;}
+.author {font-size:21px;margin:0 0 8px;}
+.kicker {font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:#45576e;}
+.metadata {margin:0 0 20px;}
+.actions {padding:18px 0;margin:16px 0;display:flex;gap:14px;flex-wrap:wrap;}
+.button {display:inline-block;background:#133e6a;color:white;padding:11px 16px;text-decoration:none;border-radius:5px;font-weight:600;}
+.aside {border-left:4px solid #5b728c;background:#f5f8fb;padding:13px 16px;}
+footer {margin-top:38px;border-top:1px solid #d7dfe8;padding-top:16px;font-size:14px;color:#48596c;}
+</style>
+</head>
+<body>
+<main>
+<p class="kicker">Independent research · technical note · corrected v1.1</p>
+<article>
+<h1>FT01-A Pipeline Reproducibility Audit: Same-Batch vs Later-Batch NMAE/MAE/RMSE on UCI Gas Sensor Array Drift Dataset</h1>
+<p class="author">Danilo Tavella · <a href="https://orcid.org/0009-0002-9596-9561">ORCID 0009-0002-9596-9561</a></p>
+<p class="metadata">26 September 2026 · Zenodo (version record) · DOI: <a href="https://doi.org/10.5281/zenodo.22976177">10.5281/zenodo.22976177</a></p>
+<div class="actions">
+<a class="button" href="FT01A_Pipeline_Reproducibility_Audit_v1_1_CORRECTED.pdf" type="application/pdf">Read the technical note (PDF)</a>
+<a href="https://zenodo.org/records/22976177">Canonical Zenodo version</a>
+</div>
+<h2>Abstract</h2>
+<p>This corrected technical note reports the reproducibility audit of the FT01-A pipeline, scripts v04-v07, on the public UCI Gas Sensor Array Drift at Different Concentrations dataset. Version 1.1 preserves the original clean-rerun identity and adds a corrective recomputation for comparator defects identified retrospectively in v05 and v06. In v05, source-transfer and target-oracle errors are now compared on the same target holdout support, and the pairwise same-batch diagonal is evaluated on the local holdout rather than on rows that include training data. The corrected v05 diagonal is 1.000 by construction, while the off-diagonal median remains 11.977. The corrected v05 all-test same-support transfer/oracle raw-row median is 18.502. In v06, corrected same-support transfer/oracle medians remain materially above 1 for Ridge and Random Forest under raw and mean/std alignment. Version 1.1 also clarifies that v04 value 5.018 is the median of cell-level future/local MAE ratios, removes methods not actually implemented in v05, and removes the v1.0 reference to TCA-based adaptation because the v07 package does not implement TCA. For the exact feature matrices, batch splits, models, seeds, and implemented controls tested, later-batch errors remain materially higher than same-batch/local or valid same-support target-oracle baselines. No general claim is made about calibration theory, sensor reliability, or drift compensation.</p>
+<section class="aside">
+<strong>Correction and scope.</strong> This is an access copy of the previously published Zenodo corrected version v1.1, not a new scientific publication or peer-reviewed journal article. The v1.0 record remains preserved as a <a href="https://doi.org/10.5281/zenodo.20528120">historical version</a>. The conclusions are specific to the exact FT01-A dataset and pipeline; the correction restricts comparator interpretation.
+</section>
+<h2>Record and provenance</h2>
+<p>Publisher / archive: Zenodo. Version DOI: <a href="https://doi.org/10.5281/zenodo.22976177">10.5281/zenodo.22976177</a>. Concept DOI: <a href="https://doi.org/10.5281/zenodo.20528119">10.5281/zenodo.20528119</a>. For licensing and current record metadata, consult the <a href="https://zenodo.org/records/22976177">Zenodo Rights section</a>. This public mirror does not change the PDF content or Zenodo record.</p>
+<p class="muted">License: <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>, as displayed in the Zenodo record Rights section. The PDF is an unchanged access copy of the corrected v1.1 version; no changes have been made to the scientific document.</p>
+<p class="muted"><small>PDF SHA-256: <code>413301945e3640185e59c9253e43e3bbd8d0e68594038e421aa16790bdf9c056</code></small></p>
+</article>
+<footer>Author: Danilo Tavella · <a href="https://github.com/danilotavella">GitHub profile</a> · <a href="https://orcid.org/0009-0002-9596-9561">ORCID</a>. Single-document bibliography/indexing pilot.</footer>
+</main>
+</body>
+</html>
